@@ -1,0 +1,107 @@
+
+.container-main {
+    width: 90%;
+    margin: 1rem auto 0.5rem;
+
+    section {
+        display: flex;
+        justify-content: space-between;
+
+        .avaliation-list {
+            width: 30%;
+            margin-right: 1rem;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    align-content: center;
+                    border-top: 1px solid silver;
+                    padding: 0.8rem;
+
+                    strong {
+                        margin-right: 0.5rem;
+                    }
+
+                    .fa {
+                        margin-right: 0.5rem;
+                        width: 10px;
+                    }
+
+
+                }
+            }
+        }
+        
+        article {
+            width: calc(100% - 35%);
+            border: 1px solid silver;
+            padding: 1rem 1rem 0;
+            border-radius: 0.8rem;
+
+            &:hover {
+                box-shadow: 1px 1px 5px silver;
+            }
+        }
+
+        .chart {
+            min-width: 700px;
+        }
+
+        .avaliation-graphic {
+            padding-top: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .apexcharts-menu-icon {
+            display: none;
+        }
+
+        .fa {
+            color: silver;
+        }
+
+        .star-check {
+            color: #ffa500;
+        }
+
+    }
+}
+
+@media(max-width:1180px){
+    .container-main {
+        section {
+            .avaliation-graphic {
+                display: flex;
+                justify-content: flex-start;
+            }
+        
+            .chart {
+                max-width: max-content;
+            }
+
+            .avaliation-list {
+                min-width: 250px;
+            }
+
+        }
+    }
+}
+
+@media(max-width:1080px){
+    .container-main {
+        section {
+            max-width: 100%;
+            
+            article {
+                width: calc(100%  - 35%);
+            }
+        }
+    }
+}

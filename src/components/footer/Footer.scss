@@ -1,0 +1,67 @@
+
+.container-footer {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 500px;
+
+    table {
+        width: 100%;
+        border-color: transparent;
+        border: 1px solid silver;
+        border-radius: 1rem;
+
+        &:hover {
+            box-shadow: 1px 1px 5px silver;
+        }
+
+        .title-footer {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        tr {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 5px;
+            
+            &:hover {
+                background-color: #e7e7e6;
+            }
+
+            th {
+                width: 100%;
+                padding: 0.5rem;
+                border-color: transparent;
+            }
+
+            td {
+                text-align: center;
+                width: 100%;
+                padding: 0.5rem;
+                border-color: transparent;
+
+            }
+
+        }
+    }
+
+    .pagination-controls {
+        display: flex;
+        justify-content: end;
+        padding: 0.5rem;
+
+        button {
+            padding: 0.2rem;
+            margin: 0 0.2rem;
+            cursor: pointer;
+            border: 1px solid silver;
+            background-color: transparent;
+            
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+}
