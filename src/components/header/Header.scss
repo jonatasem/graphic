@@ -2,7 +2,7 @@
 
 .container-header {
     width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto;
     position: relative;
 
     h1 {
@@ -44,9 +44,9 @@
     height: 35px;
     box-shadow: 1px 1px 5px silver;
     border-radius: 0.5rem;
-
+    background-color: transparent;
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 0;
 }
 
@@ -57,6 +57,17 @@
         }
         .btn-mobile {
             display: block;
+        }
+        .disable {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:550px) {
+    .container-header {
+        h1 {
+            font-size: 25px;
         }
     }
 }

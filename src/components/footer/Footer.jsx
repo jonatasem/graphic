@@ -18,14 +18,14 @@ export default function Footer({ comments }) {
 
     return (
         <footer className="container-footer">
-            <table border='1'>
+            <table border="1">
                 <thead>
                     <tr className='title-footer'>
-                        <th>Data</th>
-                        <th>Contato</th>
+                        <th className='border-left-top'>Data</th>
+                        <th className='disable-contact'>Contato</th>
                         <th>Avaliação</th>
                         <th>Profissional</th>
-                        <th>Unidade</th>
+                        <th className='disable'>Unidade</th>
                         <th>Nota</th>
                     </tr>
                 </thead>
@@ -33,10 +33,10 @@ export default function Footer({ comments }) {
                     {displayedComments.map((comment, index) => (
                         <tr className='item' key={index}>
                             <td>{comment.date}</td>
-                            <td>{comment.contact}</td>
+                            <td className='disable-contact'>{comment.contact}</td>
                             <td>{comment.rating}</td>
                             <td>{comment.professional}</td>
-                            <td>{comment.unidad}</td>
+                            <td className='disable'>{comment.unidad}</td>
                             <td>{comment.rating}</td>
                         </tr>
                     ))}
@@ -50,7 +50,7 @@ export default function Footer({ comments }) {
                     Próximo
                 </button>
             </div>
-            <div>
+            <div className='number-page'>
                 Página {Math.floor(currentIndex / commentsPerPage) + 1} de {totalPages}
             </div>
         </footer>
