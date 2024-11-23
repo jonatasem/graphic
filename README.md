@@ -1,8 +1,36 @@
-# React + Vite
+# Graphic - Avaliações de Profissionais
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto, intitulado *Graphic*, é uma aplicação web desenvolvida em React que permite aos usuários visualizar e filtrar avaliações de profissionais em diferentes unidades. Com uma interface intuitiva, os usuários podem aplicar filtros para encontrar avaliações específicas e visualizar gráficos que ilustram a distribuição das notas.
 
-Currently, two official plugins are available:
+### Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- *Filtro de Avaliações*: Os usuários podem filtrar avaliações com base na unidade, profissional e nota.
+- *Gráficos Interativos*: Visualização das notas em um gráfico de barras.
+- *Paginação*: Exibição de avaliações em páginas, permitindo uma navegação fácil.
+
+### Tecnologias Usadas
+
+- React
+- React ApexCharts
+- Font Awesome
+- SASS
+
+### Como Executar o Projeto
+
+1. Clone o repositório:
+
+   git clone https://github.com/jonatasem/graphic.git
+   cd graphic
+   
+2. Instale as dependências:
+
+   npm install
+   
+3. Inicie a aplicação:
+
+   npm start
+   
+
+### Demonstração
+
+Para visualizar a aplicação em funcionamento, acesse [jonatasem.github.io/graphic](https://jonatasem.github.io/graphic).
