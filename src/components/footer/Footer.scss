@@ -1,67 +1,77 @@
 
 .container-footer {
-    width: 90%;
-    margin: 0 auto;
-    min-height: 500px;
-
     table {
-        width: 100%;
-        border-color: transparent;
+        width: calc(100% - 10%);
+        margin: 0 auto;
+        border: none;
+        border-radius: 0.5rem;
+        border-spacing: initial;
         border: 1px solid silver;
-        border-radius: 1rem;
 
-        &:hover {
-            box-shadow: 1px 1px 5px silver;
-        }
-
-        .title-footer {
-            &:hover {
-                background-color: transparent;
-            }
-        }
-
-        tr {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 5px;
-            
-            &:hover {
-                background-color: #e7e7e6;
-            }
-
-            th {
-                width: 100%;
-                padding: 0.5rem;
-                border-color: transparent;
-            }
-
-            td {
+        thead {
+            tr {
                 text-align: center;
-                width: 100%;
-                padding: 0.5rem;
-                border-color: transparent;
 
+                th {
+                    padding: 0.5rem;
+                    border: none;
+                }
             }
+        }
 
+        tbody {
+            tr {
+                text-align: center;
+                &:hover {
+                    background-color: whitesmoke;
+                    cursor: pointer;
+                }
+                
+                td {
+                    border-bottom: none;
+                    padding: 0.5rem;
+                    border-left: none;
+                    border-right: none;
+                    border-top: 1px solid silver;
+
+
+                }
+            }
         }
     }
 
     .pagination-controls {
+        width: 90%;
         display: flex;
+        margin: 1rem auto;
         justify-content: end;
-        padding: 0.5rem;
 
         button {
-            padding: 0.2rem;
-            margin: 0 0.2rem;
             cursor: pointer;
-            border: 1px solid silver;
-            background-color: transparent;
-            
-            &:active {
-                transform: scale(0.9);
-            }
+            padding: 0.2rem;
+        }
+    }
+    .number-page {
+        display: flex;
+        justify-content: end;
+        width: 90%;
+        margin: 0 auto 1rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .container-footer {
+        .disable {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:580px){
+    .container-footer {
+        .disable-contact {
+            display: none;
         }
     }
 }

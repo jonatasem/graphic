@@ -2,7 +2,7 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import { useState } from "react";
-import { comments } from "./components/api/api"; // Importando os comentários do api.js
+import { comments } from "./components/api/api";
 
 function App() {
     const [filters, setFilters] = useState({});

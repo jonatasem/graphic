@@ -156,7 +156,7 @@ export const comments = [
     { 
         date: "05/01/2022", 
         contact: "contato5@example.com", 
-        rating: "Não Avaliaram", 
+        rating: "N. A.", 
         professional: "Fernanda Santos", 
         unidad: "Unidade C" 
     },
@@ -177,7 +177,7 @@ export const comments = [
     { 
         date: "02/01/2022", 
         contact: "contato2@example.com", 
-        rating: "Não Avaliaram", 
+        rating: "N. A.", 
         professional: "João Pereira", 
         unidad: "Unidade B" 
     },
@@ -198,7 +198,7 @@ export const comments = [
     { 
         date: "05/01/2022", 
         contact: "contato5@example.com", 
-        rating: "Não Avaliaram", 
+        rating: "N. A.", 
         professional: "Fernanda Santos", 
         unidad: "Unidade C" 
     },
@@ -219,7 +219,7 @@ export const comments = [
     { 
         date: "02/01/2022", 
         contact: "contato2@example.com", 
-        rating: "Não Avaliaram", 
+        rating: "N. A.", 
         professional: "João Pereira", 
         unidad: "Unidade B" 
     },
@@ -240,7 +240,7 @@ export const comments = [
     { 
         date: "05/01/2022", 
         contact: "contato5@example.com", 
-        rating: "Não Avaliaram", 
+        rating: "N. A.", 
         professional: "Fernanda Santos", 
         unidad: "Unidade C" 
     },
@@ -261,7 +261,7 @@ export const comments = [
     { 
         date: "02/01/2023", 
         contact: "contato2@example.com", 
-        rating: "Não Avaliaram", 
+        rating: "N. A.", 
         professional: "João Pereira", 
         unidad: "Unidade B" 
     },
@@ -282,7 +282,7 @@ export const comments = [
     { 
         date: "05/01/2023", 
         contact: "contato5@example.com", 
-        rating: "Não Avaliaram", 
+        rating: "N. A.", 
         professional: "Fernanda Santos", 
         unidad: "Unidade C" 
     },
@@ -303,7 +303,7 @@ export const comments = [
     { 
         date: "02/01/2023", 
         contact: "contato2@example.com", 
-        rating: "Não Avaliaram", 
+        rating: "N. A.", 
         professional: "João Pereira", 
         unidad: "Unidade B" 
     },
@@ -324,7 +324,7 @@ export const comments = [
     { 
         date: "05/01/2023", 
         contact: "contato5@example.com", 
-        rating: "Não Avaliaram", 
+        rating: "N. A.", 
         professional: "Fernanda Santos", 
         unidad: "Unidade C" 
     },
