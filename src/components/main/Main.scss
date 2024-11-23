@@ -33,7 +33,6 @@
 
                     i {
                         margin-right: 0.5rem;
-                        color: silver;
                     }
                 }
             }
@@ -43,9 +42,32 @@
             width: 100%;
             max-width: calc(100% - 320px);
             margin-top: 0.8rem;
+            z-index: 0;
         }
     }
 }
+
+
+i {
+    margin-right: 0.5rem;
+    color: silver; // Cor padrão para estrelas não avaliadas
+}
+
+.star-check {
+    color: #ffa500; // Laranja para estrelas avaliadas
+}
+
+.star-empty {
+    color: silver; // Cinza para estrelas não avaliadas
+}
+
+//removendo icon de menu do chart
+.apexcharts-menu-icon {
+    display: none;
+}
+
+
+
 
 
 @media (max-width:1180px) {
@@ -107,6 +129,9 @@
         }
 
         section {
+            padding: 2rem 0.5rem;
+            justify-content: space-between;
+            
             .avaliation-list {
                 ul {
                     li {

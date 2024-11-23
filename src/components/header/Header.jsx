@@ -1,19 +1,32 @@
 import React, { useState } from "react";
 import './Header.scss';
 
+//icons
+import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+
 export default function Header({ onFilterChange }) {
     const [unidadFilter, setUnidadFilter] = useState("");
     const [professionalFilter, setProfessionalFilter] = useState("");
     const [ratingFilter, setRatingFilter] = useState("");
 
+    const [menuMobile, setMenuMobile] = useState(false); // Corrigido para booleano
+
     const handleFilterChange = () => {
         onFilterChange({ unidad: unidadFilter, professional: professionalFilter, rating: ratingFilter });
+    };
+
+    const toggleMenu = () => {
+        setMenuMobile(prevState => !prevState); // Alterna o estado
     };
 
     return (
         <header className='container-header'>
             <h1>Avaliações</h1>
-            <nav className="nav-bar">
+            <button className="btn-mobile" onClick={toggleMenu} aria-label="Menu Móvel">
+                {menuMobile ? <AiOutlineClose /> : <FaBars />}
+            </button>
+            <nav className={`nav-bar ${menuMobile ? 'active' : 'inactive'}`}>
                 <section>
                     <select value={unidadFilter} onChange={(e) => setUnidadFilter(e.target.value)}>
                         <option value="">Unidades</option>
@@ -37,12 +50,11 @@ export default function Header({ onFilterChange }) {
                         <option value="3">3.0</option>
                         <option value="4">2.0</option>
                         <option value="5">1.0</option>
-                        <option value="Não Avaliaram">Não Avaliaram</option> {/* Adicionando opção */}
+                        <option value="Não Avaliaram">Não Avaliaram</option>
                     </select>
                 </section>
                 <button className="btn-filter" onClick={handleFilterChange} aria-label="Aplicar filtros">Filtrar</button>
             </nav>
-            <button className="btn-mobile"></button>
         </header>
     );
 }
