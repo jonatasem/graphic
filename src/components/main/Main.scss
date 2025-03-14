@@ -125,10 +125,13 @@ i {
         }
 
         section {
-            padding: 2rem 0.5rem;
+            padding: 2rem 0rem;
+            border: transparent;
             justify-content: space-between;
             
             .avaliation-list {
+                font-size: 15px;
+
                 ul {
                     li {
                         p {
