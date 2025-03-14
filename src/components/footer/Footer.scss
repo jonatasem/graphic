@@ -1,0 +1,78 @@
+
+.container-footer {
+    table {
+        width: calc(100% - 10%);
+        margin: 0 auto;
+        border: none;
+        border-radius: 0.5rem;
+        border-spacing: initial;
+        border: 1px solid silver;
+
+        thead {
+            tr {
+                text-align: center;
+
+                th {
+                    padding: 0.5rem;
+                    border: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                text-align: center;
+                &:hover {
+                    background-color: whitesmoke;
+                    cursor: pointer;
+                }
+                
+                td {
+                    border-bottom: none;
+                    padding: 0.5rem;
+                    border-left: none;
+                    border-right: none;
+                    border-top: 1px solid silver;
+
+
+                }
+            }
+        }
+    }
+
+    .pagination-controls {
+        width: 90%;
+        display: flex;
+        margin: 1rem auto;
+        justify-content: end;
+
+        button {
+            cursor: pointer;
+            padding: 0.2rem;
+            margin: 0 0 0 0.5rem
+        }
+    }
+    .number-page {
+        display: flex;
+        justify-content: end;
+        width: 90%;
+        margin: 0 auto 1rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .container-footer {
+        .disable {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:580px){
+    .container-footer {
+        .disable-contact {
+            display: none;
+        }
+    }
+}
