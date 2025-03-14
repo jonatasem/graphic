@@ -13,7 +13,7 @@ SCSS: Para estilização da aplicação.
 
 ## Instalação
 1. Clone o repositório:
-   git clone https://github.com/seu-usuario/graphic.git
+   git clone https://github.com/jonatasem/graphic.git
    
 2. Navegue até o diretório do projeto:
    cd graphic
